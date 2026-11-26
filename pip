@@ -1,0 +1,5 @@
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
+I     660       1     660       5256  cons1     197609 09:55:05 /usr/bin/less
+      703     662     703        668  cons2     197609 09:56:27 /usr/bin/PS
+      662       1     662      21288  cons2     197609 09:56:23 /usr/bin/bash
+      653       1     653      19192  cons0     197609 09:31:11 /usr/bin/vim

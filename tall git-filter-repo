@@ -1,0 +1,24 @@
+[33mcommit 940e4641bf869a097574041a64f3af637b50f2a1[m
+Merge: 7643fb9 2cf7480
+Author: Jmdec <infinitech.justin2024@gmail.com>
+Date:   Tue Aug 4 14:06:59 2026 +0800
+
+    updated config
+
+[33mcommit 2cf7480fb0a516d7c4221ea84ac711a3273c50cd[m
+Author: InfinitechCorp <infinitechcorp.ph@gmail.com>
+Date:   Tue Aug 4 14:00:27 2026 +0800
+
+    Delete .env
+
+[33mcommit c80a51c922a87ff8db694663d88a0f63a163029c[m
+Author: Jmdec <infinitech.justin2024@gmail.com>
+Date:   Tue Aug 4 13:39:52 2026 +0800
+
+    updated navbar login
+
+[33mcommit 70333af5fb2bd7b9358f241c2c96a9a4df4e29ed[m
+Author: Jmdec <infinitech.justin2024@gmail.com>
+Date:   Tue Aug 4 09:49:36 2026 +0800
+
+    staging
