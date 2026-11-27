@@ -32,24 +32,17 @@ const AUTO_SLIDE_INTERVAL = 5000;
 // and reports its real dimensions.
 const FALLBACK_ASPECT_RATIO = 2.4;
 
-// Organic two-tone green wave, sampled from the reference image
-// (light mint top, deeper green wave beneath).
+// Smooth diagonal green gradient, sampled from the reference image
+// (lighter green top-left → deeper green bottom-right).
 function HeroWaveBackground() {
   return (
-    <svg
-      className="pointer-events-none absolute inset-0 -z-10 h-full w-full"
-      viewBox="0 0 1440 400"
-      preserveAspectRatio="none"
+    <div
+      className="pointer-events-none absolute inset-0 -z-10"
+      style={{
+        background: "linear-gradient(135deg, #52C86C 0%, #2DB45E 100%)",
+      }}
       aria-hidden="true"
-    >
-      <rect width="1440" height="400" fill="#D6F5B4" />
-      <path
-        d="M0,235 C120,255 220,268 340,262 C470,256 560,232 680,238
-           C790,243 860,268 960,266 C1080,263 1150,225 1260,205
-           C1330,193 1390,160 1440,120 L1440,400 L0,400 Z"
-        fill="#83CF7B"
-      />
-    </svg>
+    />
   );
 }
 
@@ -222,10 +215,15 @@ export function Hero() {
               height={160}
               priority
               className="h-auto w-full max-w-[280px]"
+              style={{
+                // White outline so the green logo stands out on the green bg.
+                filter:
+                  "drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff) drop-shadow(0 0 6px rgba(255,255,255,0.7))",
+              }}
             />
           </h1>
 
-          <p className="mt-4 max-w-sm text-sm font-medium leading-relaxed text-[#252927]">
+          <p className="mt-4 max-w-sm text-sm font-semibold leading-relaxed text-[#06301a]">
             Shop your everyday essentials from your trusted brands. Find
             products that are eco-friendly, affordable, and reliable.
           </p>

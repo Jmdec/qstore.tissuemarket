@@ -212,13 +212,8 @@ export function PromoPopup() {
           "[&>button]:opacity-100 [&>button:hover]:bg-black/35",
         )}
       >
-        <div className="relative grid max-h-[92vh] overflow-y-auto bg-gradient-to-br from-[#e3f6cf] via-[#cdeeb0] to-[#b2e28f] md:aspect-[945/386] md:max-h-none md:grid-cols-[34%_66%] md:overflow-hidden">
-          {/* Soft curved wave behind the text, bottom-left */}
-          <div
-            aria-hidden
-            className="pointer-events-none absolute -bottom-28 -left-24 h-60 w-[75%] rounded-[100%] bg-[#6fc24a]/55 blur-[2px]"
-          />
-
+        {/* Smooth diagonal green gradient (light top-left → deeper bottom-right) */}
+        <div className="relative grid max-h-[92vh] overflow-y-auto bg-gradient-to-br from-[#52C86C] to-[#2DB45E] md:aspect-[945/386] md:max-h-none md:grid-cols-[34%_66%] md:overflow-hidden">
           {/* Left: headline + CTA + carousel controls */}
           <div className="relative z-10 flex flex-col justify-center gap-4 px-6 py-7 md:px-9 md:py-6">
             <DialogHeader className="space-y-2.5 text-left">
@@ -229,7 +224,7 @@ export function PromoPopup() {
               <DialogTitle className="font-display text-3xl font-semibold leading-[1.1] text-[#0a3d22] md:text-[34px]">
                 Deals you can grab right now
               </DialogTitle>
-              <DialogDescription className="max-w-[17rem] text-sm leading-relaxed text-[#1f4d33]">
+              <DialogDescription className="max-w-[17rem] text-sm leading-relaxed text-[#0a3d22]">
                 Browse the latest promos and grab them while they last.
               </DialogDescription>
             </DialogHeader>
@@ -291,8 +286,8 @@ export function PromoPopup() {
             )}
           </div>
 
-          {/* Right: big rounded green panel with the product.
-              Clicking it opens that promo's page. */}
+          {/* Right: deeper green panel with the product, so it stays distinct
+              from the lighter background. Clicking it opens that promo's page. */}
           <div className="relative z-10 p-3 md:p-3.5 md:pl-0">
             <div
               role="button"
@@ -305,7 +300,7 @@ export function PromoPopup() {
                 }
               }}
               aria-label={`View ${product.name} promo`}
-              className="flex h-full cursor-pointer flex-col items-center gap-5 overflow-hidden rounded-2xl bg-gradient-to-br from-[#7fcf55] via-[#33b35a] to-[#00A552] p-5 shadow-lg transition-[filter] hover:brightness-105 md:flex-row md:gap-7 md:px-5 md:py-4"
+              className="flex h-full cursor-pointer flex-col items-center gap-5 overflow-hidden rounded-2xl bg-gradient-to-br from-[#1f9d55] via-[#12884a] to-[#0a6f3b] p-5 shadow-lg transition-[filter] hover:brightness-105 md:flex-row md:gap-7 md:px-5 md:py-4"
               aria-live="polite"
             >
               <div className="relative aspect-square w-full max-w-[300px] shrink-0 overflow-hidden rounded-3xl bg-white shadow-xl md:h-full md:max-w-none md:w-auto">
